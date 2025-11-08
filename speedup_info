@@ -1,0 +1,7 @@
+
+## Expected Results
+
+The speedup is expected to be close to the number of physical cores in the CPU. For instance, on a system with 8 cores, the parallel version should be nearly 8 times faster than the sequential one.
+
+The actual speedup might be slightly less than the number of cores due to overhead from thread creation and management. Using a `dynamic` schedule with OpenMP can help mitigate load imbalance, where some threads finish their work earlier than others, leading to better overall hardware utilization.
+
